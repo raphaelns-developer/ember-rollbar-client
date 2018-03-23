@@ -45,6 +45,11 @@ export default Service.extend({
   },
 
   error(message, data = {}) {
+    console.log('');
+    console.log('Erro disparado para o Rollbar...')
+    console.log('Mensagem: ', message);
+    console.log('Data: ', data);
+    console.log('');
     return this.get('notifier').error(message, data);
   },
 
