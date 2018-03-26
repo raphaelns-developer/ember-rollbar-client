@@ -35,6 +35,9 @@ export default Service.extend({
 
   rollbarClient(customConfig = {}) {
     let config = deepMerge({}, this.get('config'), customConfig);
+    console.log('');
+    console.log('New Rollbar Instance config:', config);
+    console.log('');
     return new Rollbar(config);
   },
 
