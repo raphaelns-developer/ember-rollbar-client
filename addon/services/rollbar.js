@@ -49,7 +49,7 @@ export default Service.extend({
     console.log('Erro disparado para o Rollbar...')
     console.log('Mensagem: ', message);
     console.log('Data: ', data);
-    console.log('Environment: ' this.get('config'));
+    console.log('Environment: ', this.get('config'));
     console.log('');
     return this.get('notifier').error(message, data);
   },
